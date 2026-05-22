@@ -3,152 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KBR RESTRO & BAR | Fine Dining & Drinks</title>
-    <link rel="stylesheet" href="style.css">
+    <title>KBR Restro & Bar - Premium Nepali Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <h1>KBR</h1>
-                <span>RESTRO & BAR</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-utensils"></i> KBR Restro & Bar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Welcome to KBR</h1>
-            <h2>RESTRO & BAR</h2>
-            <p>Experience exquisite dining with private spaces, premium drinks, and unforgettable moments</p>
-            <div class="rating-badge">
-                <span class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </span>
-                <span class="rating-text">4.9</span>
-                <span class="reviews-count">(7 reviews)</span>
+            <h1 class="hero-title">Experience Great Food & Chill Vibes</h1>
+            <p class="hero-subtitle">Discover authentic Nepali cuisine with premium bar experience</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-gold">View Menu</a>
+                <a href="#reservation" class="btn btn-outline-gold">Reserve Table</a>
             </div>
-            <a href="menu.html" class="btn-primary">View Menu</a>
         </div>
-    </header>
+    </section>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- Special Banner -->
+    <section class="special-banner">
         <div class="container">
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-utensils"></i>
-                    <h3>Fine Dining</h3>
-                    <p>Exquisite cuisines prepared by expert chefs with the finest ingredients</p>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h3><i class="fas fa-clock"></i> Happy Hour</h3>
+                    <p>5 PM – 7 PM | 50% Off All Drinks</p>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-glass-cheers"></i>
-                    <h3>Premium Bar</h3>
-                    <p>Wide selection of wines, spirits, and crafted cocktails</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-users"></i>
-                    <h3>Private Spaces</h3>
-                    <p>Exclusive private dining areas for families and special occasions</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-heart"></i>
-                    <h3>Family Friendly</h3>
-                    <p>Perfect destination for family gatherings and celebrations</p>
+                <div class="col-md-6">
+                    <h3><i class="fas fa-music"></i> Live Music</h3>
+                    <p>Every Friday & Saturday Night | 8 PM Onwards</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Reviews Section -->
-    <section class="reviews-section">
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
         <div class="container">
-            <h2 class="section-title">What Our Guests Say</h2>
-            <div class="reviews-grid">
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Authentic Nepali & International Cuisine</p>
+
+            <!-- Search/Filter -->
+            <div class="menu-search mb-5">
+                <input type="text" id="menuSearch" class="form-control" placeholder="Search menu items...">
+            </div>
+
+            <!-- Menu Items -->
+            <div class="menu-grid">
+                <!-- Mo:Mo -->
+                <div class="menu-card" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1609501676725-7186f017a4b0?w=400" alt="Mo:Mo">
+                    <div class="menu-card-content">
+                        <h4>Mo:Mo</h4>
+                        <p class="menu-description">Steamed dumplings filled with spiced meat</p>
+                        <div class="menu-price-order">
+                            <span class="menu-price">Rs. 250</span>
+                            <button class="btn-order">Order Now</button>
                         </div>
-                        <span class="review-date">2 months ago</span>
                     </div>
-                    <p class="review-text">"Sabai thikai kha tara private space chai ali kam kha .. aru ta thikai xa ... Family lera ni jana milx..halla badi aaux"</p>
                 </div>
-                <div class="review-card">
-                    <div class="review-header">
-                        <div class="review-rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+
+                <!-- Chicken BBQ -->
+                <div class="menu-card" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561a1a?w=400" alt="Chicken BBQ">
+                    <div class="menu-card-content">
+                        <h4>Chicken BBQ</h4>
+                        <p class="menu-description">Grilled chicken with aromatic spices</p>
+                        <div class="menu-price-order">
+                            <span class="menu-price">Rs. 450</span>
+                            <button class="btn-order">Order Now</button>
                         </div>
-                        <span class="review-date">a year ago</span>
                     </div>
-                    <p class="review-text">"Food: 5 | Service: 5"</p>
+                </div>
+
+                <!-- Pizza -->
+                <div class="menu-card" data-category="food">
+                    <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400" alt="Pizza">
+                    <div class="menu-card-content">
+                        <h4>Wood-fired Pizza</h4>
+                        <p class="menu-description">Crispy crust with premium toppings</p>
+                        <div class="menu-price-order">
+                            <span class="menu-price">Rs. 520</span>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cocktails -->
+                <div class="menu-card" data-category="drink">
+                    <img src="https://images.unsplash.com/photo-1536599810764-c8cc11f5cfa7?w=400" alt="Cocktails">
+                    <div class="menu-card-content">
+                        <h4>Signature Cocktails</h4>
+                        <p class="menu-description">Expertly mixed with premium spirits</p>
+                        <div class="menu-price-order">
+                            <span class="menu-price">Rs. 400</span>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Whiskey -->
+                <div class="menu-card" data-category="drink">
+                    <img src="https://images.unsplash.com/photo-1608270861620-7c80b997e038?w=400" alt="Whiskey">
+                    <div class="menu-card-content">
+                        <h4>Premium Whiskey</h4>
+                        <p class="menu-description">Select collection from around the world</p>
+                        <div class="menu-price-order">
+                            <span class="menu-price">Rs. 600+</span>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beer -->
+                <div class="menu-card" data-category="drink">
+                    <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=400" alt="Beer">
+                    <div class="menu-card-content">
+                        <h4>Craft Beers</h4>
+                        <p class="menu-description">Local & international craft varieties</p>
+                        <div class="menu-price-order">
+                            <span class="menu-price">Rs. 300</span>
+                            <button class="btn-order">Order Now</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="overall-rating">
-                <div class="rating-circle">
-                    <span class="rating-number">4.9</span>
-                    <span class="rating-label">Overall Rating</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aab4d?w=500" alt="Restaurant Interior" class="about-image">
                 </div>
-                <div class="rating-bars">
-                    <div class="rating-bar"><span class="bar-label">5 star</span><div class="bar"><div class="bar-fill" style="width: 100%"></div></div><span class="bar-count">7</span></div>
-                    <div class="rating-bar"><span class="bar-label">4 star</span><div class="bar"><div class="bar-fill" style="width: 0%"></div></div><span class="bar-count">0</span></div>
-                    <div class="rating-bar"><span class="bar-label">3 star</span><div class="bar"><div class="bar-fill" style="width: 0%"></div></div><span class="bar-count">0</span></div>
-                    <div class="rating-bar"><span class="bar-label">2 star</span><div class="bar"><div class="bar-fill" style="width: 0%"></div></div><span class="bar-count">0</span></div>
-                    <div class="rating-bar"><span class="bar-label">1 star</span><div class="bar"><div class="bar-fill" style="width: 0%"></div></div><span class="bar-count">0</span></div>
+                <div class="col-lg-6">
+                    <h2>About KBR Restro & Bar</h2>
+                    <p>Welcome to KBR Restro & Bar, where culinary excellence meets authentic Nepali hospitality. Our restaurant is a perfect blend of traditional flavors and modern dining experience.</p>
+                    <p>We pride ourselves on serving authentic Nepali cuisine prepared by expert chefs using the finest ingredients. Whether you're celebrating with family or enjoying a night out with friends, our cozy environment welcomes everyone.</p>
+                    <p>Our bar offers premium spirits, craft beers, and signature cocktails curated by our experienced mixologists. Live music performances on weekends add to the vibrant atmosphere.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-home"></i>
+                            <h5>Cozy Environment</h5>
+                            <p>Warm ambiance & elegant décor</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <h5>Family-Friendly</h5>
+                            <p>Perfect for all occasions</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <h5>Live Music & Events</h5>
+                            <p>Entertainment every weekend</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-    <section class="gallery-section">
+    <section id="gallery" class="gallery-section">
         <div class="container">
-            <h2 class="section-title">Our Gallery</h2>
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">Explore the Vibes of KBR</p>
+
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <i class="fas fa-hamburger"></i>
-                    <span>Food & Drink</span>
+                    <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=500" alt="Gallery 1">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <i class="fas fa-music"></i>
-                    <span>Vibe</span>
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=500" alt="Gallery 2">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <i class="fas fa-camera"></i>
-                    <span>Street View</span>
+                    <img src="https://images.unsplash.com/photo-1587314168485-cb4dc7b4713e?w=500" alt="Gallery 3">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
                 </div>
                 <div class="gallery-item">
-                    <i class="fas fa-glass-cheers"></i>
-                    <span>Bar</span>
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=500" alt="Gallery 4">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1585518419758-9a50f8e1e3fe?w=500" alt="Gallery 5">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561a1a?w=500" alt="Gallery 6">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <p class="section-subtitle">What Our Guests Say</p>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Amazing food, fantastic ambiance, and excellent service. The mo:mo was authentic and delicious. Will definitely come back!"</p>
+                    <h5 class="review-author">Rajesh Kumar</h5>
+                    <p class="review-date">2 weeks ago</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"The live music on Friday was wonderful! Loved the cocktails and the BBQ chicken was perfectly grilled. A must-visit place in the city."</p>
+                    <h5 class="review-author">Priya Sharma</h5>
+                    <p class="review-date">1 week ago</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-text">"Great experience with family. Food was authentic, staff was very friendly, and the happy hour drinks were a great deal. Highly recommended!"</p>
+                    <h5 class="review-author">Amit Poudel</h5>
+                    <p class="review-date">3 days ago</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-text">"Loved the pizza and the whiskey selection. The atmosphere is perfect for relaxing evenings. Slightly crowded on weekends but totally worth it."</p>
+                    <h5 class="review-author">Sneha Yadav</h5>
+                    <p class="review-date">5 days ago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">Reserve Your Table</h2>
+            <p class="section-subtitle">Book a dining experience with us</p>
+
+            <div class="reservation-form-container">
+                <form id="reservationForm" class="reservation-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" id="resName" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" id="resPhone" class="form-control" placeholder="Phone Number" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="number" id="resGuests" class="form-control" placeholder="Number of Guests" min="1" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="datetime-local" id="resDateTime" class="form-control" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <textarea id="resMessage" class="form-control" placeholder="Special Requests (Optional)" rows="4"></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-gold btn-lg w-100">Reserve Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in Touch</p>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Address</h5>
+                                <p>Kathmandu, Nepal</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>+977-1-XXXXXXX | +977-98XXXXXXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>Email</h5>
+                                <p>info@kbrrestro.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h5>Hours</h5>
+                                <p>Mon-Thu: 12 PM - 11 PM<br>Fri-Sun: 12 PM - 12 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="map-placeholder">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3641449139045!2d85.32627!3d27.717245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb18fd5c5c5c5d%3A0x5c5c5c5c5c5c5c5c!2sKathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1234567890" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,35 +387,50 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>KBR RESTRO & BAR</h3>
-                    <p>Your premier destination for fine dining and premium drinks in Budhabare</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact Info</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> P3C2+32, Budhabare 57200</p>
-                    <p><i class="fas fa-phone"></i> 9768440060</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Opening Hours</h3>
-                    <p>Monday - Sunday: 10:00 AM - 11:00 PM</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Follow Us</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>KBR Restro & Bar</h5>
+                    <p>Premium Nepali cuisine and bar experience</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#reservation">Reservation</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Opening Hours</h5>
+                    <p>Monday - Thursday: 12 PM - 11 PM</p>
+                    <p>Friday - Sunday: 12 PM - 12 AM</p>
+                    <p>We're open for all occasions!</p>
+                </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 KBR RESTRO & BAR. All rights reserved.</p>
+            <hr class="footer-divider">
+            <div class="text-center">
+                <p>&copy; 2026 KBR Restro & Bar. All rights reserved. | Designed for Excellence</p>
             </div>
         </div>
     </footer>
 
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="successToast" class="toast" role="alert">
+            <div class="toast-body">
+                <strong>Success!</strong> Your reservation has been confirmed.
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
